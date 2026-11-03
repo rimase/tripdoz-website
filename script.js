@@ -6,7 +6,7 @@ if (header) {
     <div class="site-header">
       <div class="wrap nav">
         <a class="logo" href="index.html" aria-label="TRIPDOZ Home">
-          <img class="brand-logo" src="assets/logo2.png" alt="TRIPDOZ">
+          <img class="brand-logo" src="assets/logo.png" alt="TRIPDOZ">
         </a>
 
         <nav class="nav-links" id="main-nav">
