@@ -9,7 +9,8 @@
 /* Approved image-only hero and About cards */
 .hero-photo::after,.feature-photo::after{display:none}
 .app-screen{width:100%;height:100%;display:block;object-fit:cover;object-position:top;border-radius:19px}
-/* Official TRIPDOZ logo */
+
+/* TRIPDOZ Official Logo */
 .logo .brand-logo {
   display: block;
   width: auto;
@@ -18,6 +19,7 @@
   object-fit: contain;
 }
 
+/* Smaller logo on mobile */
 @media (max-width: 560px) {
   .logo .brand-logo {
     height: 29px;
