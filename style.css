@@ -22,7 +22,7 @@
 /* Smaller logo on mobile */
 @media (max-width: 560px) {
   .logo .brand-logo {
-    height: 40px;
+    height: 30px;
     max-width: 105px;
   }
 }
