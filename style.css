@@ -26,3 +26,14 @@
     max-width: 105px;
   }
 }
+
+/* Full-bleed Egypt photographic hero */
+.hero{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;min-height:clamp(520px,70vh,760px);padding:110px 0;background:#1e2d4a url('assets/cairo-opera-house.png') center center/cover no-repeat;color:#fff;text-align:center}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,22,42,.48),rgba(10,22,42,.57))}
+.hero-centered{width:100%;max-width:1000px}
+.hero h1{font-size:clamp(40px,5.5vw,76px);line-height:1.12;letter-spacing:-2px;margin:0 auto 25px;text-wrap:balance;text-shadow:0 2px 20px rgba(0,0,0,.24)}
+.hero h1 span{color:#fff}
+.hero p{font-size:clamp(15px,1.5vw,19px);line-height:1.8;max-width:780px;margin:0 auto;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.35)}
+.category{cursor:default}
+.category:hover{transform:none}
+@media(max-width:560px){.hero{min-height:580px;padding:85px 0;background-position:center}.hero h1{letter-spacing:-1.3px}.hero p{line-height:1.65}}
