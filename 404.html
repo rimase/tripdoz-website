@@ -1,16 +1,33 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex"><title>Open in Tripdoz</title>
-<style>body{margin:0;background:#f7f8fa;color:#1e2d4a;font-family:system-ui,-apple-system,sans-serif;min-height:100vh;display:grid;place-items:center}main{max-width:420px;padding:32px;text-align:center}h1{font-size:28px}p{line-height:1.6;color:#536174}.button{display:block;background:#1e2d4a;color:#fff;text-decoration:none;border-radius:12px;padding:15px;margin:22px 0;font-weight:600}.secondary{color:#1e2d4a}</style>
-</head><body><main><h1>Continue in Tripdoz</h1><p id="description">Discover places and travel plans across Egypt.</p><a class="button" id="open" href="/">Open Tripdoz</a><a class="secondary" href="/">Visit Tripdoz.com</a></main>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Continue in Tripdoz</title>
+<style>
+body{margin:0;background:#f7f8fa;color:#1e2d4a;font-family:system-ui,-apple-system,sans-serif;min-height:100vh;display:grid;place-items:center}
+main{box-sizing:border-box;width:100%;max-width:420px;padding:32px;text-align:center}
+h1{font-size:28px;margin:0 0 12px}
+p{line-height:1.6;color:#536174;margin:0 0 24px}
+.button{display:block;box-sizing:border-box;width:100%;background:#1e2d4a;color:#fff;text-decoration:none;border-radius:12px;padding:15px;margin:12px 0;font-weight:600}
+.button.secondary{background:#fff;color:#1e2d4a;border:1px solid #ccd2dc}
+</style>
+</head>
+<body><main>
+<h1>Continue in Tripdoz</h1>
+<p id="description">Open this link in Tripdoz or get the app for your phone.</p>
+<a class="button" id="open" href="#">Open Tripdoz</a>
+<a class="button secondary" href="https://play.google.com/store/apps/details?id=com.tripdoz.app">Get it on Google Play</a>
+<a class="button secondary" href="https://apps.apple.com/us/search?term=Tripdoz">Find it on the App Store</a>
+</main>
 <script>
 (function(){
-var path=location.pathname;
-var match=path.match(/^\/(invite|place)\/([^/]+)\/?$/);
+var match=location.pathname.match(/^\/(invite|place)\/([^/]+)\/?$/);
 if(!match){location.replace('/');return;}
 var kind=match[1],id=match[2];
-document.getElementById('description').textContent=kind==='invite'?'You have been invited to a travel plan. Open Tripdoz to sign in and join.':'Open this place in Tripdoz to see photos, reviews and visitor information.';
-document.getElementById('open').href='tripdoz://'+kind+'/'+id;
+document.getElementById('description').textContent=kind==='invite'
+?'Open your travel plan invitation in Tripdoz, or install the app to continue.'
+:'Open this place in Tripdoz, or install the app to explore.';
+document.getElementById('open').href='tripdoz://'+kind+'/'+encodeURIComponent(decodeURIComponent(id));
 })();
-</script></body></html>
+</script>
+</body></html>
