@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tripdoz.app",
+      "sha256_cert_fingerprints": [
+        "FA:9F:7F:7B:63:77:F4:51:74:13:37:82:75:69:26:EB:AD:83:84:01:2F:1A:0D:60:69:F2:9F:E5:DB:C1:47:B5"
+      ]
+    }
+  }
+]

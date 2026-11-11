@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appID": "2AN56T62PJ.com.tripdoz.app",
+        "paths": [
+          "/place/*",
+          "/invite/*"
+        ]
+      }
+    ]
+  }
+}
